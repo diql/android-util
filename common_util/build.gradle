@@ -38,6 +38,16 @@ dependencies {
     testImplementation 'org.robolectric:robolectric:3.8'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
 
+apply plugin: 'com.novoda.bintray-release'
 
+publish {
+    repoName = 'common-util'
+    userOrg = 'diql'//bintray.com用户名
+    groupId = 'org.diql'//jcenter上的路径
+    artifactId = 'common-util'//项目名称
+    publishVersion = '0.1.0'//版本号
+    desc = 'Android common util lib.'//描述，不重要
+    website = 'https://github.com/diql/android-util'//网站，不重要；尽量模拟github上的地址
 }
