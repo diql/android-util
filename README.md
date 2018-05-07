@@ -7,12 +7,12 @@ maven:
 <dependency>
   <groupId>org.diql</groupId>
   <artifactId>common-util</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <type>pom</type>
 </dependency>
 ```
 
 gradle:
 ```groovy
-compile 'org.diql:common-util:0.1.0'
+compile 'org.diql:common-util:0.1.1'
 ```

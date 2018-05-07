@@ -3,13 +3,11 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 27
 
-
-
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 27
-        versionCode 1
-        versionName '0.1.0'
+        versionCode common_util_version_code as int
+        versionName common_util_version_name
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -47,7 +45,7 @@ publish {
     userOrg = 'diql'//bintray.com用户名
     groupId = 'org.diql'//jcenter上的路径
     artifactId = 'common-util'//项目名称
-    publishVersion = '0.1.0'//版本号
+    publishVersion = common_util_version_name//版本号
     desc = 'Android common util lib.'//描述，不重要
     website = 'https://github.com/diql/android-util'//网站，不重要；尽量模拟github上的地址
 }
