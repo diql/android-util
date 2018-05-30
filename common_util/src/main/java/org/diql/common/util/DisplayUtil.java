@@ -11,7 +11,7 @@ import java.util.Objects;
 public class DisplayUtil {
     private static final String TAG = "DisplayUtil";
 
-    public static final float IOS_DP_SCALE = 360 / 375;
+    public static final float IOS_DP_SCALE = 360 / 375F;
 
     private DisplayUtil() {
         // empty.
